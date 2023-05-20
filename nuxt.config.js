@@ -28,6 +28,14 @@ export default {
   ],
 
   buildDir: 'dist',
+  
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {}
+    }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
